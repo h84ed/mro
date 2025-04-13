@@ -1,0 +1,13 @@
+{
+  "doctype": "Form Layout",
+  "document_type": "MRO Work Order",
+  "is_custom": 1,
+  "fields": [
+    {"fieldname": "aircraft", "fieldtype": "Link", "label": "Aircraft", "options": "Aircraft"},
+    {"fieldname": "engine", "fieldtype": "Link", "label": "Engine", "options": "Asset"},
+    {"fieldname": "customer", "fieldtype": "Link", "label": "Customer", "options": "Customer"},
+    {"fieldname": "parts_list", "fieldtype": "Table", "label": "Parts List", "options": "MRO Work Order Part"},
+    {"fieldname": "labor_logs", "fieldtype": "Table", "label": "Labor Logs", "options": "Timesheet"},
+    {"fieldname": "status", "fieldtype": "Data", "label": "Status"}
+  ]
+}

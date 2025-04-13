@@ -1,0 +1,22 @@
+{
+ "doctype": "DocType",
+ "name": "Aircraft",
+ "module": "Maintenance",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "registration", "label": "Registration", "fieldtype": "Data", "reqd": 1},
+  {"fieldname": "aircraft_type", "label": "Type", "fieldtype": "Data"},
+  {"fieldname": "hours_since_overhaul", "label": "Hours Since Overhaul", "fieldtype": "Float"},
+  {"fieldname": "hours_since_new", "label": "Hours Since New", "fieldtype": "Float"},
+  {"fieldname": "cycles_since_overhaul", "label": "Cycles Since Overhaul", "fieldtype": "Int"},
+  {"fieldname": "cycles_since_new", "label": "Cycles Since New", "fieldtype": "Int"},
+  {"fieldname": "cycles_remaining", "label": "Cycles Remaining", "fieldtype": "Int"},
+  {"fieldname": "engine", "label": "Engine", "fieldtype": "Link", "options": "Engine"},
+  {"fieldname": "next_maintenance_event", "label": "Next Maintenance Event", "fieldtype": "Data"},
+  {"fieldname": "next_maintenance_due_date", "label": "Next Maintenance Due Date", "fieldtype": "Date"},
+  {"fieldname": "maintenance_schedule", "label": "Maintenance Schedule", "fieldtype": "Table", "options": "Maintenance Schedule"},
+  {"fieldname": "engine_maintenance_schedule", "label": "Engine Maintenance Schedule", "fieldtype": "Table", "options": "Engine Maintenance Schedule"}
+  {"fieldname": "owner", "label": "Owner", "fieldtype": "Link", "options": "Customer"}
+],
+ "permissions": [{"role": "System Manager", "read": 1, "write": 1}]
+}

@@ -1,0 +1,12 @@
+{
+ "doctype": "DocType",
+ "name": "Service Bulletin",
+ "module": "Compliance",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "reference", "label": "SB Reference", "fieldtype": "Data"},
+  {"fieldname": "aircraft", "label": "Aircraft", "fieldtype": "Link", "options": "Aircraft"},
+  {"fieldname": "compliance_date", "label": "Compliance Date", "fieldtype": "Date"}
+],
+ "permissions": [{"role": "System Manager", "read": 1, "write": 1}]
+}

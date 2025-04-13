@@ -1,0 +1,13 @@
+{
+ "doctype": "DocType",
+ "name": "Maintenance Task",
+ "module": "Maintenance",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "task_type", "label": "Task Type", "fieldtype": "Select", "options": "Inspection\nRepair\nOverhaul"},
+  {"fieldname": "description", "label": "Description", "fieldtype": "Small Text"},
+  {"fieldname": "interval_hours", "label": "Interval (Hours)", "fieldtype": "Float"},
+  {"fieldname": "interval_cycles", "label": "Interval (Cycles)", "fieldtype": "Float"}
+],
+ "permissions": [{"role": "System Manager", "read": 1, "write": 1}]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "doctype": "Custom Field",
+    "dt": "Asset",
+    "fieldname": "tool_kit_id",
+    "fieldtype": "Data",
+    "label": "Tool Kit ID",
+    "insert_after": "asset_name"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Asset",
+    "fieldname": "is_calibrated_tool",
+    "fieldtype": "Check",
+    "label": "Is Calibrated Tool",
+    "insert_after": "tool_kit_id"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Asset",
+    "fieldname": "calibration_due_date",
+    "fieldtype": "Date",
+    "label": "Calibration Due Date",
+    "insert_after": "is_calibrated_tool"
+  }
+]

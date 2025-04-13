@@ -1,0 +1,34 @@
+{
+  "doctype": "Dashboard",
+  "name": "Inventory Dashboard",
+  "is_standard": 0,
+  "label": "Inventory Dashboard",
+  "module": "Aviation MRO Inventory",
+  "charts": [
+    {
+      "chart_name": "Item Condition Distribution",
+      "chart_type": "Group By",
+      "document_type": "Item",
+      "group_by": "condition_code",
+      "aggregate_function": "count",
+      "label": "Items by Condition",
+      "type": "Bar"
+    },
+    {
+      "chart_name": "Shelf Life Expiry Tracker",
+      "chart_type": "Report",
+      "document_type": "Item",
+      "report_name": "Shelf Life Expiry Report",
+      "label": "Shelf Life Expiry",
+      "type": "Table"
+    },
+    {
+      "chart_name": "Calibrated Tools Due",
+      "chart_type": "Report",
+      "document_type": "Asset",
+      "report_name": "Tool Calibration Due List",
+      "label": "Calibration Due",
+      "type": "Table"
+    }
+  ]
+}

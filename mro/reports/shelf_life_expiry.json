@@ -1,0 +1,6 @@
+{
+  "report_name": "Shelf Life Expiry Report",
+  "ref_doctype": "Extended Stock Item",
+  "report_type": "Query Report",
+  "query": "SELECT name, shelf_life, part_number FROM `tabExtended Stock Item` WHERE shelf_life <= 30"
+}

@@ -1,0 +1,14 @@
+{
+ "doctype": "DocType",
+ "name": "Lease Agreement",
+ "module": "Leasing",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "asset", "label": "Asset", "fieldtype": "Link", "options": "Asset"},
+  {"fieldname": "customer", "label": "Customer", "fieldtype": "Link", "options": "Customer"},
+  {"fieldname": "start_date", "label": "Start Date", "fieldtype": "Date"},
+  {"fieldname": "end_date", "label": "End Date", "fieldtype": "Date"},
+  {"fieldname": "billing_frequency", "label": "Billing Frequency", "fieldtype": "Select", "options": "Monthly\nQuarterly\nAnnually"}
+],
+ "permissions": [{"role": "System Manager", "read": 1, "write": 1}]
+}

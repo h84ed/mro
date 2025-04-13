@@ -1,0 +1,13 @@
+{
+ "doctype": "DocType",
+ "name": "Airworthiness Directive",
+ "module": "Compliance",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "reference", "label": "AD Reference", "fieldtype": "Data"},
+  {"fieldname": "compliance_date", "label": "Compliance Date", "fieldtype": "Date"},
+  {"fieldname": "aircraft", "label": "Aircraft", "fieldtype": "Link", "options": "Aircraft"},
+  {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Open\nComplied\nNot Applicable"}
+],
+ "permissions": [{"role": "System Manager", "read": 1, "write": 1}]
+}

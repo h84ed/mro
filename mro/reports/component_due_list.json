@@ -1,0 +1,6 @@
+{
+  "report_name": "Component Due List",
+  "ref_doctype": "Extended Stock Item",
+  "report_type": "Query Report",
+  "query": "SELECT name, part_number, serial_number, shelf_life, modified FROM `tabExtended Stock Item` WHERE shelf_life IS NOT NULL ORDER BY shelf_life ASC"
+}

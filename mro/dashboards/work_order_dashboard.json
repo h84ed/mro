@@ -1,0 +1,36 @@
+{
+  "doctype": "Dashboard",
+  "name": "Work Order Dashboard",
+  "is_standard": 0,
+  "label": "Work Order Dashboard",
+  "module": "Aviation MRO Inventory",
+  "charts": [
+    {
+      "chart_name": "Work Order Status Breakdown",
+      "chart_type": "Group By",
+      "document_type": "MRO Work Order",
+      "group_by": "status",
+      "aggregate_function": "count",
+      "label": "Work Orders by Status",
+      "type": "Pie"
+    },
+    {
+      "chart_name": "Open Work Orders",
+      "chart_type": "Report",
+      "document_type": "MRO Work Order",
+      "report_name": "Open MRO Work Orders",
+      "label": "Open Work Orders",
+      "type": "Table"
+    },
+    {
+      "chart_name": "Hours Logged per Project",
+      "chart_type": "Group By",
+      "document_type": "Timesheet",
+      "group_by": "project",
+      "aggregate_function": "sum",
+      "aggregate_on": "total_hours",
+      "label": "Labor Hours per Project",
+      "type": "Bar"
+    }
+  ]
+}

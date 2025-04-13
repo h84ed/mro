@@ -1,0 +1,147 @@
+[
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "part_number",
+    "fieldtype": "Data",
+    "label": "Part Number",
+    "insert_after": "item_name"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "serial_number",
+    "fieldtype": "Data",
+    "label": "Serial Number",
+    "insert_after": "part_number"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "condition_code",
+    "fieldtype": "Select",
+    "label": "Condition Code",
+    "options": "New
+Overhauled
+Repaired
+As Removed
+Serviceable",
+    "insert_after": "serial_number"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "certification_status",
+    "fieldtype": "Select",
+    "label": "Certification Status",
+    "options": "Form 1
+8130-3
+None",
+    "insert_after": "condition_code"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "shelf_life",
+    "fieldtype": "Int",
+    "label": "Shelf Life (Days)",
+    "insert_after": "certification_status"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "calibration_required",
+    "fieldtype": "Check",
+    "label": "Calibration Required",
+    "insert_after": "shelf_life"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "is_llp",
+    "fieldtype": "Check",
+    "label": "Is LLP",
+    "insert_after": "calibration_required"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "is_rotable",
+    "fieldtype": "Check",
+    "label": "Is Rotable",
+    "insert_after": "is_llp"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "is_consumable",
+    "fieldtype": "Check",
+    "label": "Is Consumable",
+    "insert_after": "is_rotable"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "release_type",
+    "fieldtype": "Data",
+    "label": "Release Type",
+    "insert_after": "is_consumable"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "certificate_attachment",
+    "fieldtype": "Attach",
+    "label": "Certificate Attachment",
+    "insert_after": "release_type"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "documentation_attachments",
+    "fieldtype": "Attach",
+    "label": "Documentation Attachments",
+    "insert_after": "certificate_attachment"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "photo",
+    "fieldtype": "Attach Image",
+    "label": "Photo",
+    "insert_after": "documentation_attachments"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "manufacturer",
+    "fieldtype": "Link",
+    "label": "Manufacturer",
+    "options": "Supplier",
+    "insert_after": "photo"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "preferred_supplier",
+    "fieldtype": "Link",
+    "label": "Preferred Supplier",
+    "options": "Supplier",
+    "insert_after": "manufacturer"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "part_category",
+    "fieldtype": "Select",
+    "label": "Part Category",
+    "options": "Engines
+Engine Components
+Airframe
+Avionics
+Landing Gear
+Consumables
+Other",
+    "insert_after": "preferred_supplier"
+  }
+]

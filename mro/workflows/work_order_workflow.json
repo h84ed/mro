@@ -1,0 +1,18 @@
+{
+  "workflow_name": "Work Order Workflow",
+  "document_type": "MRO Work Order",
+  "is_active": 1,
+  "states": [
+    {"state": "Open", "doc_status": 0, "update_field": "status"},
+    {"state": "In Progress", "doc_status": 0, "update_field": "status"},
+    {"state": "Inspection", "doc_status": 0, "update_field": "status"},
+    {"state": "Complete", "doc_status": 1, "update_field": "status"},
+    {"state": "Cancelled", "doc_status": 2, "update_field": "status"}
+  ],
+  "transitions": [
+    {"state": "Open", "action": "Start Work", "next_state": "In Progress", "allowed_roles": ["Technician"]},
+    {"state": "In Progress", "action": "Send to Inspection", "next_state": "Inspection", "allowed_roles": ["Technician"]},
+    {"state": "Inspection", "action": "Approve & Complete", "next_state": "Complete", "allowed_roles": ["Inspector"]},
+    {"state": "Open", "action": "Cancel", "next_state": "Cancelled", "allowed_roles": ["Stores Manager"]}
+  ]
+}

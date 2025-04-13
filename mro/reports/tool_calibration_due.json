@@ -1,0 +1,6 @@
+{
+  "report_name": "Tool Calibration Due List",
+  "ref_doctype": "Extended Stock Item",
+  "report_type": "Query Report",
+  "query": "SELECT name, part_number, calibration_required, modified FROM `tabExtended Stock Item` WHERE calibration_required = 1 ORDER BY modified DESC"
+}

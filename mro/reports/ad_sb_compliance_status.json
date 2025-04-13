@@ -1,0 +1,6 @@
+{
+  "report_name": "AD/SB Compliance Status",
+  "ref_doctype": "Extended Stock Item",
+  "report_type": "Query Report",
+  "query": "SELECT name, part_number, ad_status, sb_status FROM `tabExtended Stock Item`"
+}

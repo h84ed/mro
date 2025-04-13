@@ -1,0 +1,15 @@
+{
+ "doctype": "DocType",
+ "name": "Core Tracking",
+ "module": "Exchange",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "part", "label": "Part", "fieldtype": "Link", "options": "Item"},
+  {"fieldname": "serial_no", "label": "Serial No", "fieldtype": "Data"},
+  {"fieldname": "core_returned", "label": "Core Returned", "fieldtype": "Check"},
+  {"fieldname": "core_value_adjusted", "label": "Core Value Adjusted", "fieldtype": "Currency"},
+  {"fieldname": "engine", "label": "Engine", "fieldtype": "Link", "options": "Engine"},
+  {"fieldname": "aircraft", "label": "Aircraft", "fieldtype": "Link", "options": "Aircraft"}
+],
+ "permissions": [{"role": "System Manager", "read": 1, "write": 1}]
+}
